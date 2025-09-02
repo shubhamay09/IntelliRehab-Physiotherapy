@@ -5,13 +5,13 @@ Focus: Helping users recover from knee and joint injuries with real-time motion 
 
 Features:
 
-Tracks exercises via webcam
+1.Tracks exercises via webcam
 
-Real-time form correction & feedback
+2.Real-time form correction & feedback
 
-Progress tracking + gamification
+3.Progress tracking + gamification
 
-Personalized rehabilitation exercises
+4.Personalized rehabilitation exercises
 
 Inspiration: Reduce cost/time of physiotherapy after knee replacement or accidents by giving patients an intelligent at-home rehab solution.
 
@@ -25,19 +25,19 @@ Suggests tailored modifications based on user performance
 
 Tech Stack:
 
-Python (core)
+1.Python (core)
 
-MediaPipe → pose tracking & motion analysis
+2.MediaPipe → pose tracking & motion analysis
 
-OpenCV → video processing
+3.OpenCV → video processing
 
-NumPy → data handling
+4.NumPy → data handling
 
-PyQt5 → GUI
+5.PyQt5 → GUI
 
-TensorFlow/PyTorch → AI model handling
+6.TensorFlow/PyTorch → AI model handling
 
-Built as: Client-side desktop app with GUI (PyCharm IDE).
+7.Built as: Client-side desktop app with GUI (PyCharm IDE).
 
 Setup: Requires Python 3.8+, OpenCV, ML frameworks, dependencies in requirements.txt.
 IntelliRehab is a Python-based, AI-powered rehabilitation application designed to assist patients in post-surgical recovery, especially after knee and joint surgeries. It leverages computer vision to track patient movements in real time through a webcam and provides instant feedback to ensure exercises are performed correctly. The app also monitors progress, includes gamification elements, and offers tailored routines for an engaging rehabilitation journey.
@@ -88,7 +88,7 @@ TensorFlow or PyTorch
 Other dependencies listed in requirements.txt
 
 Installation
-git clone https://github.com/yourusername/intellirehab.git
+git clone https://github.com/shubhamay09/intellirehab-Physiotherapy.git
 cd intellirehab
 pip install -r requirements.txt
 Run the App
