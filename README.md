@@ -1,92 +1,41 @@
-# HackRice14 RecoveryIO
+# IntelliRehab-Physiotherapy
 
-**HackRice14 RecoveryIO (RestoreIO)** is a Python-based, AI-powered rehabilitation application that focuses on helping users recover from knee and other joint injuries. It leverages motion tracking via webcam and provides real-time feedback to ensure users are performing exercises correctly. The app tracks progress, includes gamification elements, and offers various exercises for users to complete as part of their rehabilitation journey.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+**IntelliRehab-Physiotherapy** is a Python-based, AI-powered rehabilitation application that helps users recover from joint injuries and perform physiotherapy exercises safely. It leverages **motion tracking via webcam**, provides **real-time feedback**, and monitors progress to ensure exercises are performed correctly.
 
 ![DEMO1](project_img1.jpg)
 ![DEMO2](project_img2.jpg)
 
-## Inspiration
+---
 
-RestoreIO was created in response to the demand for an intelligent, customized solution to accelerate healing following an accident or knee replacement surgery. To reduce stiffness in the newly repaired knee, patients typically need to perform daily exercises under the guidance of a physician. However, this procedure can be costly and time-consuming. Our goal was to develop an app that enables patients to monitor their recovery and receive real-time feedback on their form, eliminating the need for ongoing medical supervision.
+## Table of Contents
 
-## What It Does
+1. [Project Structure](#project-structure)
+2. [Inspiration](#inspiration)
+3. [What It Does](#what-it-does)
+4. [How We Built It](#how-we-built-it)
+5. [Key Features](#key-features)
+6. [Getting Started](#getting-started)
 
-RestoreIO tracks patients' progress and analyzes their form in real-time during recovery exercises using computer vision. By assisting users in maintaining proper posture throughout rehabilitation activities, it reduces the risk of re-injury or delayed recovery. The software aids in knee replacement recovery by offering tailored workout modifications based on user performance.
+   * [Prerequisites](#prerequisites)
+   * [Installation](#installation)
+   * [Running the Application](#running-the-application)
+7. [Future Enhancements](#future-enhancements)
+8. [License](#license)
+9. [Author](#author)
 
-## How We Built It
+---
 
-We built RestoreIO as a client-side application with a complete and user-friendly graphical interface using Python in PyCharm. The application incorporates libraries for motion tracking and body movement analysis, such as:
-- **MediaPipe** (from Google) for pose tracking and motion analysis
-- **NumPy** for data manipulation
-- **OpenCV** for video processing
-- **PyQt5** for the graphical interface
-
-This combination allows RestoreIO to provide comprehensive feedback on recovery activities and make form-based improvement suggestions effectively.
-
-## Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed on your system:
-
-- Python 3.8 or higher
-- OpenCV
-- TensorFlow or PyTorch (for AI model handling)
-- Other dependencies listed in `requirements.txt`
-
-### Installation
-
-1. Clone the repository to your local machine:
-
-    ```bash
-    git clone https://github.com/OfficialCodeVoyage/HackRice14_RecoveryIO.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd HackRice14_RecoveryIO
-    ```
-
-3. Create a virtual environment (optional but recommended):
-
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-4. Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Running the Application
-
-1. Start the application by running the `main.py` file:
-
-    ```bash
-    python main.py
-    ```
-
-2. The GUI will launch, allowing you to select exercises and begin your rehabilitation program.
-
-### Testing Webcam Functionality
-
-Ensure your webcam is connected and test the motion tracking by running:
-
-```bash
-python test_webcam.py
-```
-
-Project Structure
+## Project Structure
 
 ```plaintext
-HackRice14_RecoveryIO/
+IntelliRehab-Physiotherapy/
 │
 ├── assets/               # Media assets (images, videos, etc.)
 ├── gui/                  # GUI-related code and layout
-├── modules/              # Exercise modules (e.g., knee, back exercises)
+├── modules/              # Exercise modules (knee, back, shoulder exercises)
 ├── tutorials/            # Documentation and instructional material
 ├── utils/                # Utility functions
 ├── .gitignore            # Git ignore rules
@@ -100,48 +49,117 @@ HackRice14_RecoveryIO/
 └── view_progress.py      # View progress and stats over time
 ```
 
-## Exercises Supported
+---
 
-Currently, the following exercises are supported:
+## Inspiration
 
-- Knee Bends
-- Squats
-- Leg Raises
-- Back Stretches
+IntelliRehab-Physiotherapy was created to address the challenges patients face during post-surgery or joint injury rehabilitation. Correct posture and exercise form usually require constant supervision by physiotherapists, which can be **costly and time-consuming**.
 
-Future exercises for other body parts (e.g., shoulder, ankle) will be added in upcoming versions.
+This project provides a **smart, accessible solution** for monitoring exercises, tracking progress, and receiving **real-time corrective feedback**, reducing the need for continuous supervision.
 
-## Progress Tracking
+---
 
-User progress is saved in `progress.db`, a SQLite database. You can track your completed exercises, points, and rewards via the app’s built-in visualization features.
+## What It Does
 
-## Built With
+* Tracks users’ movements and analyzes exercise form in **real-time** using computer vision.
+* Provides **corrective feedback** to reduce re-injury risks.
+* Offers **personalized exercise recommendations** based on performance.
+* Incorporates **gamification elements** to motivate users.
+* Supports multiple types of rehabilitation exercises, including **knee, shoulder, and joint mobility exercises**.
 
-- **AI**
-- **Computer Vision**
-- **MediaPipe**
-- **OpenCV**
-- **Python**
-- **PyQt5**
-- **Red Bulls** (for keeping us awake!)
+---
 
-## Contributing
+## How We Built It
 
-We welcome contributions! If you would like to add new features, fix bugs, or suggest improvements, please follow these steps:
+IntelliRehab-Physiotherapy is a **client-side Python application** with a fully-featured GUI. Key technologies:
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-name`)
-3. Make your changes and commit (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature-name`)
-5. Submit a pull request
+* **MediaPipe** – pose tracking and motion analysis
+* **OpenCV** – real-time video processing
+* **NumPy** – data manipulation
+* **PyQt5** – interactive GUI
+* **TensorFlow / PyTorch** – AI model integration for exercise recognition and feedback
+
+This allows accurate posture analysis, exercise recommendations, and progress tracking.
+
+---
+
+## Key Features
+
+1. **Real-time motion tracking** – ensures correct posture.
+2. **Progress monitoring** – tracks improvement over time.
+3. **Exercise suggestions & modifications** – adapts difficulty dynamically.
+4. **Gamification & motivation** – encourages consistent exercise.
+5. **User-friendly GUI** – accessible for all ages and technical skills.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+* Python 3.8 or higher
+* OpenCV
+* TensorFlow or PyTorch
+* Other dependencies listed in `requirements.txt`
+
+---
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/shubhamay09/IntelliRehab-Physiotherapy.git
+
+# Navigate to project directory
+cd IntelliRehab-Physiotherapy
+
+# Create virtual environment (optional)
+python -m venv venv
+
+# Activate virtual environment
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
+
+### Running the Application
+
+```bash
+python main.py
+```
+
+Launches the GUI and starts the rehabilitation exercise tracking system.
+
+---
+
+## Future Enhancements
+
+* Voice guidance for exercises
+* Integration with wearable sensors
+* Personalized exercise plans based on medical history
+* Exportable progress reports for physiotherapists
+
+---
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** – see the LICENSE file for details.
 
-## Acknowledgements
+---
 
-- **HackRice14** for hosting the hackathon that inspired this project. - https://www.hackrice.com/
-- **OpenAI**, **TensorFlow**, **OpenCV** for the core technologies that power the motion tracking and AI feedback.
+## Author
 
+**Shubhamay Santra**
+AI and computer vision enthusiast dedicated to improving healthcare through technology.
 
+---
+
+If you want, I can also **add visual badges for PyQt5, OpenCV, MediaPipe, and TensorFlow/PyTorch** and **link the demo videos/images** to make it even more professional for GitHub.
+
+Do you want me to do that next?
