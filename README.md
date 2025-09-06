@@ -1,12 +1,17 @@
 # IntelliRehab-Physiotherapy
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![PyQt5](https://img.shields.io/badge/PyQt5-GUI-brightgreen.svg)](https://pypi.org/project/PyQt5/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-yellow.svg)](https://opencv.org/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-Pose%20Tracking-orange.svg)](https://google.github.io/mediapipe/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-AI-red.svg)](https://www.tensorflow.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-AI-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**IntelliRehab-Physiotherapy** is a Python-based, AI-powered rehabilitation application that helps users recover from joint injuries and perform physiotherapy exercises safely. It leverages **motion tracking via webcam**, provides **real-time feedback**, and monitors progress to ensure exercises are performed correctly.
+**IntelliRehab-Physiotherapy** is a Python-based, AI-powered rehabilitation application that assists users in recovering from joint injuries and physiotherapy exercises safely. It leverages **motion tracking via webcam**, provides **real-time feedback**, and monitors progress to ensure exercises are performed correctly.
 
-![DEMO1](project_img1.jpg)
-![DEMO2](project_img2.jpg)
+[![DEMO1](project_img1.jpg)](project_img1.jpg)
+[![DEMO2](project_img2.jpg)](project_img2.jpg)
 
 ---
 
@@ -53,9 +58,9 @@ IntelliRehab-Physiotherapy/
 
 ## Inspiration
 
-IntelliRehab-Physiotherapy was created to address the challenges patients face during post-surgery or joint injury rehabilitation. Correct posture and exercise form usually require constant supervision by physiotherapists, which can be **costly and time-consuming**.
+IntelliRehab-Physiotherapy addresses challenges faced by patients undergoing **post-surgery or joint injury rehabilitation**. Maintaining correct posture usually requires frequent supervision, which is **costly and time-consuming**.
 
-This project provides a **smart, accessible solution** for monitoring exercises, tracking progress, and receiving **real-time corrective feedback**, reducing the need for continuous supervision.
+This project provides a **smart, accessible solution** for monitoring exercises, tracking progress, and receiving **real-time corrective feedback**.
 
 ---
 
@@ -71,15 +76,13 @@ This project provides a **smart, accessible solution** for monitoring exercises,
 
 ## How We Built It
 
-IntelliRehab-Physiotherapy is a **client-side Python application** with a fully-featured GUI. Key technologies:
-
 * **MediaPipe** – pose tracking and motion analysis
 * **OpenCV** – real-time video processing
 * **NumPy** – data manipulation
 * **PyQt5** – interactive GUI
 * **TensorFlow / PyTorch** – AI model integration for exercise recognition and feedback
 
-This allows accurate posture analysis, exercise recommendations, and progress tracking.
+This allows **accurate posture analysis**, exercise recommendations, and progress tracking.
 
 ---
 
@@ -100,7 +103,7 @@ This allows accurate posture analysis, exercise recommendations, and progress tr
 * Python 3.8 or higher
 * OpenCV
 * TensorFlow or PyTorch
-* Other dependencies listed in `requirements.txt`
+* Other dependencies in `requirements.txt`
 
 ---
 
@@ -134,7 +137,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Launches the GUI and starts the rehabilitation exercise tracking system.
+Launches the **IntelliRehab-Physiotherapy GUI** for real-time rehabilitation exercise tracking.
 
 ---
 
@@ -149,7 +152,7 @@ Launches the GUI and starts the rehabilitation exercise tracking system.
 
 ## License
 
-This project is licensed under the **MIT License** – see the LICENSE file for details.
+This project is licensed under the **MIT License** – see LICENSE for details.
 
 ---
 
@@ -159,7 +162,3 @@ This project is licensed under the **MIT License** – see the LICENSE file for 
 AI and computer vision enthusiast dedicated to improving healthcare through technology.
 
 ---
-
-If you want, I can also **add visual badges for PyQt5, OpenCV, MediaPipe, and TensorFlow/PyTorch** and **link the demo videos/images** to make it even more professional for GitHub.
-
-Do you want me to do that next?
